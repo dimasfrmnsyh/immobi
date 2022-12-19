@@ -1,0 +1,32 @@
+{
+  "name": "testimmobi",
+  "version": "1.0.0",
+  "description": "testimmobi",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development && nodemon index.js"
+  },
+  "author": "dimasfrmnsyh",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "bulma": "^0.9.4",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "install": "^0.13.0",
+    "npm": "^9.2.0",
+    "pg": "^8.8.0",
+    "react-router-dom": "^6.5.0",
+    "sequelize": "^6.27.0",
+    "sequelize-cli": "^6.5.2",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
