@@ -1,0 +1,410 @@
+{
+	"info": {
+		"_postman_id": "dc29a20c-06e3-4b43-9c96-adbd2a57b58e",
+		"name": "immobi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13135065"
+	},
+	"item": [
+		{
+			"name": "karyawan",
+			"item": [
+				{
+					"name": "get all karyawan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/karyawans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"karyawans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show karyawan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/karyawans/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"karyawans",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create karyawan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Dimas Firmansyah\",\r\n    \"id_jabatan\": 2,\r\n    \"age\": \"25\",\r\n    \"gender\": \"L\",\r\n    \"tanggal_lahir\": \"05-07-1996\",\r\n    \"alamat\": \"sesuai KTP\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/karyawans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"karyawans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update karyawan",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Dimas Firmansyah1\",\r\n    \"id_jabatan\": 2,\r\n    \"age\": \"25\",\r\n    \"gender\": \"L\",\r\n    \"tanggal_lahir\": \"05-07-1996\",\r\n    \"alamat\": \"sesuai KTP\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/karyawans/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"karyawans",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove karyawan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/karyawans/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"karyawans",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "jabatan",
+			"item": [
+				{
+					"name": "get all jabatan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/jabatans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"jabatans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show jabatan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/jabatans/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"jabatans",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create jabatan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_departement\": 1,\r\n    \"nama_jabatan\": \"jabatan 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/jabatans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"jabatans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update jabatan",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_departement\": 1,\r\n    \"nama_jabatan\": \"jabatan 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/jabatans/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"jabatans",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove jabatan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/jabatans/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"jabatans",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find jabatan by id departemen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/jabatans/departements/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"jabatans",
+								"departements",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "departemen",
+			"item": [
+				{
+					"name": "get all departemen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/departements",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"departements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show departemen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/departements/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"departements",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create departemen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_departement\": \"departemens 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/departements",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"departements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update departemen",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_departement\": 1,\r\n    \"nama_jabatan\": \"jabatan 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/departements/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"departements",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove departemen",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/departements/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"departements",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
